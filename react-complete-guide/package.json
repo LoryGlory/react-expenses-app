@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,cjs,mjs}": "eslint --cache --fix --cache-location ./node_modules/.cache/.eslintcache",
+    "*.{js,css,md}": "prettier --write"
   }
 }
