@@ -82,7 +82,7 @@ The height of chart bars is calculated dynamically to match the maximum value of
 
 ### Built With
 
-* [![React][React.js]][React-url]
+[![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +142,8 @@ authentication.
 ## Contact
 
 Project Link: [https://github.com/LoryGlory/react-expenses-app](https://github.com/LoryGlory/react-expenses-app)
-
+<br/><br/>
+LinkedIn: [https://www.linkedin.com/in/laura-roganovic-1a694b207/](https://www.linkedin.com/in/laura-roganovic-1a694b207/) 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
