@@ -1,7 +1,8 @@
+// filter expenses by year in dropdown menu
 import './ExpenseFilter.css';
 
-
 const ExpensesFilter = props => {
+  // handler to change value to selected prop in onChangeFilter in Expenses component
   const dropdownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };

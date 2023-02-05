@@ -1,3 +1,4 @@
+// list element for each expense, using ExpenseDate and Card component and props for ExpenseForm input fields
 import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';

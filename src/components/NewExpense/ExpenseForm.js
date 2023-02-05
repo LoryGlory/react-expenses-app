@@ -1,11 +1,14 @@
+// form for adding new expenses
 import React, {useState} from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
+  // useState hooks for each input field with empty default value
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setEnteredAmount] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
 
+  // individual input field handlers to change the set-states
   const titleChangeHandler = event => {
     setEnteredTitle(event.target.value);
   };
@@ -16,6 +19,7 @@ const ExpenseForm = (props) => {
     setEnteredDate(event.target.value);
   };
 
+  // add new data to expenseData array on form submit
   const submitHandler = event => {
     event.preventDefault();
 
@@ -25,6 +29,7 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate)
     };
 
+    // add new expenseData to prop in New Expense component, reset input fields
     props.onSaveExpenseData(expenseData);
     setEnteredTitle('');
     setEnteredAmount('');

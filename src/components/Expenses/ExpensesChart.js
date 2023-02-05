@@ -1,6 +1,8 @@
+//
 import React from "react";
 import Chart from "../Chart/Chart";
 
+// receive filtered expenses as a prop,
 const ExpensesChart = props => {
   const chartDataPoints = [
     {label: 'Jan', value: 0},
@@ -17,6 +19,7 @@ const ExpensesChart = props => {
     {label: 'Dec', value: 0},
   ];
 
+  // for loop through all our expenses, check months of expenses, update the corresponding data point by expense amount
   for (const expense of props.expenses) {
     const expenseMonth = expense.date.getMonth();
     chartDataPoints[expenseMonth].value += expense.amount;

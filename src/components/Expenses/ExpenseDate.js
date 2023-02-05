@@ -1,3 +1,5 @@
+// displaying dates in left square of each expense item, used in ExpenseItem component
+
 import './ExpenseDate.css';
 
 const ExpenseDate = (props) => {

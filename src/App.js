@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
 
+//dummy expense entries to display
 const dummyExpenses = [
   {
     id: 'e1',
@@ -31,8 +32,10 @@ const dummyExpenses = [
 
 const App = () => {
 
+  // use dummy expenses as default value, add new expenses with useState hook
   const [expenses, setExpenses] = useState(dummyExpenses);
 
+  // handler to add new expenses from NewExpense component, returning new & old expenses with spread operator
   const addExpenseHandler = expense => {
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];

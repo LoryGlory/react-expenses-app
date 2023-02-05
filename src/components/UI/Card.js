@@ -1,3 +1,4 @@
+// card component for expense items
 import './Card.css';
 
 const Card = (props) => {
